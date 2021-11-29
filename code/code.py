@@ -45,7 +45,7 @@ def start_and_menu_command(m):
     global user_list
     chat_id = m.chat.id
 
-    text_intro = "Welcome to TrackMyDollar - a simple solution to track your expenses! \nHere is a list of available commands, please enter a command of your choice so that I can assist you further: \n\n"
+    text_intro = "Welcome to TrackMyDollar - a simple solution to track your expenses! \n Please select the functionality you want assistance with from the below: \n\n"
     commands = helper.getCommands()
     for c in commands:  # generate help text out of the commands dictionary defined at the top
         text_intro += "/" + c + ": "
